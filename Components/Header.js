@@ -6,7 +6,7 @@ function Header() {
       {/* Left */}
       <div className="flex items-center">
         <div className="flex ml-2 items-center rounded-full font-black">
-          <h1 className="text-2xl">NerTURS</h1>
+          <h1 className="text-2xl text-blue-600">NerTURS</h1>
         </div>
       </div>
       {/* Center */}
@@ -42,39 +42,37 @@ function Header() {
       </div>
 
       {/* Right */}
-      <div className="flex items-center sm:space-x-2 justify-end">
-        <div className="flex items-center mr-12">
-          <button className="btn flex items-center cursor-pointer md:px-2 lg:px-3 sm:h-14 md:hover:bg-gray-100 rounded-xl active:border-b-2 active:border-blue-500 group">
-            <h3 className="h-5 text-center text-gray-500 sm:h-7 mx-auto group-hover:text-blue-500">
+      <div className="flex items-center sm:space-x-2 justify-end sm:text-sm align-middle">
+        <div className="flex items-center lg:mr-12">
+          <button className="btn flex items-center cursor-pointer md:px-2 lg:px-6 sm:h-14 md:hover:bg-gray-100 rounded-xl active:border-b-2 active:border-blue-500 group">
+            <h3 className="h-5 text-center text-gray-600 sm:h-7 mx-auto group-hover:text-blue-500">
               About Us
             </h3>
           </button>
-          <button className="btn flex items-center cursor-pointer md:px-2 lg:px-3 sm:h-14 md:hover:bg-gray-100 rounded-xl active:border-b-2 active:border-blue-500 group">
-            <h3 className="h-5 text-center text-gray-500 sm:h-7 mx-auto group-hover:text-blue-500">
+          <button className="btn flex items-center cursor-pointer md:px-2 lg:px-6 sm:h-14 md:hover:bg-gray-100 rounded-xl active:border-b-2 active:border-blue-500 group">
+            <h3 className="h-5 text-center text-gray-600 sm:h-7 mx-auto group-hover:text-blue-500">
               Features & Services
             </h3>
           </button>
-          <button className="btn flex items-center cursor-pointer md:px-2 lg:px-3 sm:h-14 md:hover:bg-gray-100 rounded-xl active:border-b-2 active:border-blue-500 group">
-            <h3 className="h-5 text-center text-gray-500 sm:h-7 mx-auto group-hover:text-blue-500">
+          <button className="btn flex items-center cursor-pointer md:px-2 lg:px-6 sm:h-14 md:hover:bg-gray-100 rounded-xl active:border-b-2 active:border-blue-500 group">
+            <h3 className="h-5 text-center text-gray-600 sm:h-7 mx-auto group-hover:text-blue-500">
               Our Team
             </h3>
           </button>
-          <button className="btn flex items-center cursor-pointer md:px-2 lg:px-3 sm:h-14 md:hover:bg-gray-100 rounded-xl active:border-b-2 active:border-blue-500 group">
-            <h3 className="h-5 text-center text-gray-500 sm:h-7 mx-auto group-hover:text-blue-500">
+          <button className="btn flex items-center cursor-pointer md:px-2 lg:px-6 sm:h-14 md:hover:bg-gray-100 rounded-xl active:border-b-2 active:border-blue-500 group">
+            <h3 className="h-5 text-center text-gray-600 sm:h-7 mx-auto group-hover:text-blue-500">
               Blog
             </h3>
           </button>
-          <button className="btn flex items-center cursor-pointer md:px-2 lg:px-3 sm:h-14 md:hover:bg-gray-100 rounded-xl active:border-b-2 active:border-blue-500 group">
-            <h3 className="h-5 text-center text-gray-500 sm:h-7 mx-auto group-hover:text-blue-500">
+          <button className="btn flex items-center cursor-pointer md:px-2 lg:px-6 sm:h-14 md:hover:bg-gray-100 rounded-xl active:border-b-2 active:border-blue-500 group">
+            <h3 className="h-5 text-center text-gray-600 sm:h-7 mx-auto group-hover:text-blue-500">
               Contact Us
             </h3>
           </button>
         </div>
-        <button className="btn border-2 border-black flex items-center cursor-pointer md:px-5 lg:px-6 sm:h-14 rounded-xl active:border-b-2 group-hover:bg-white active:border-black group">
-          <h3 className="h-5 text-center sm:h-7 mx-auto group-hover:text-black group-hover:bg-white">
-            SignIn / SignUp
-          </h3>
-        </button>
+        <div className="btn align-middle text-black bg-white border-2 border-black flex items-center cursor-pointer lg:px-6 sm:h-14 rounded-xl active:border-b-2 hover:bg-black hover:text-white duration-200">
+          <h3 className="h-1 text-center sm:h-7 mx-auto">Sign In / Sign Up</h3>
+        </div>
       </div>
     </header>
   );
