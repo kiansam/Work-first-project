@@ -1,7 +1,7 @@
 import Image from "next/image";
 import image from "../public/images/image.jpg";
 
-function Header() {
+function Introduction() {
   return (
     <div className="relative w-full h-200">
       <Image src={image} className="w-full h-full" alt="Image1" />
@@ -23,4 +23,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Introduction;
