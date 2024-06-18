@@ -1,14 +1,17 @@
 // import HeaderItem from "./HeaderItem";
+import Link from "next/link";
 
 function Header() {
   return (
     <header className="sticky top-0 z-50 bg-white flex items-center p-2 lg:px-5 shadow-md h-20">
       {/* Left */}
-      <div className="flex items-center">
-        <div className="flex ml-2 items-center rounded-full font-black">
-          <h1 className="text-2xl text-blue-600">NerTURS</h1>
+      <Link href="/">
+        <div className="flex items-center">
+          <div className="flex ml-2 items-center rounded-full font-black">
+            <h1 className="text-2xl text-blue-600">NerTURS</h1>
+          </div>
         </div>
-      </div>
+      </Link>
       {/* Center */}
       <div className="flex justify-center flex-grow">
         <div className="flex space-x-2 md:space-x-2">
@@ -44,14 +47,16 @@ function Header() {
       {/* Right */}
       <div className="flex items-center sm:space-x-2 justify-end sm:text-sm align-middle">
         <div className="flex items-center lg:mr-12">
+          <Link href="/about">
+            <button className="btn flex items-center cursor-pointer md:px-2 lg:px-6 sm:h-14 md:hover:bg-gray-100 rounded-xl active:border-b-2 active:border-blue-500 group">
+              <h3 className="h-5 text-center text-gray-600 sm:h-7 mx-auto group-hover:text-blue-500">
+                About Us
+              </h3>
+            </button>
+          </Link>
           <button className="btn flex items-center cursor-pointer md:px-2 lg:px-6 sm:h-14 md:hover:bg-gray-100 rounded-xl active:border-b-2 active:border-blue-500 group">
             <h3 className="h-5 text-center text-gray-600 sm:h-7 mx-auto group-hover:text-blue-500">
-              About Us
-            </h3>
-          </button>
-          <button className="btn flex items-center cursor-pointer md:px-2 lg:px-6 sm:h-14 md:hover:bg-gray-100 rounded-xl active:border-b-2 active:border-blue-500 group">
-            <h3 className="h-5 text-center text-gray-600 sm:h-7 mx-auto group-hover:text-blue-500">
-              Features & Services
+              <Link href="/featuresandservices"> Features & Services</Link>
             </h3>
           </button>
           <button className="btn flex items-center cursor-pointer md:px-2 lg:px-6 sm:h-14 md:hover:bg-gray-100 rounded-xl active:border-b-2 active:border-blue-500 group">

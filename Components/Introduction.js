@@ -1,5 +1,6 @@
 import Image from "next/image";
 import image from "../public/images/image.jpg";
+import Link from "next/link";
 
 function Introduction() {
   return (
@@ -15,9 +16,11 @@ function Introduction() {
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
         </h3>
-        <button className="mt-10 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-          About Us
-        </button>
+        <Link href="/about">
+          <button className="mt-10 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            About Us
+          </button>
+        </Link>
       </div>
     </div>
   );
