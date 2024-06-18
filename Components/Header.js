@@ -54,30 +54,40 @@ function Header() {
               </h3>
             </button>
           </Link>
-          <button className="btn flex items-center cursor-pointer md:px-2 lg:px-6 sm:h-14 md:hover:bg-gray-100 rounded-xl active:border-b-2 active:border-blue-500 group">
-            <h3 className="h-5 text-center text-gray-600 sm:h-7 mx-auto group-hover:text-blue-500">
-              <Link href="/featuresandservices"> Features & Services</Link>
-            </h3>
-          </button>
-          <button className="btn flex items-center cursor-pointer md:px-2 lg:px-6 sm:h-14 md:hover:bg-gray-100 rounded-xl active:border-b-2 active:border-blue-500 group">
-            <h3 className="h-5 text-center text-gray-600 sm:h-7 mx-auto group-hover:text-blue-500">
-              Our Team
-            </h3>
-          </button>
-          <button className="btn flex items-center cursor-pointer md:px-2 lg:px-6 sm:h-14 md:hover:bg-gray-100 rounded-xl active:border-b-2 active:border-blue-500 group">
-            <h3 className="h-5 text-center text-gray-600 sm:h-7 mx-auto group-hover:text-blue-500">
-              Blog
-            </h3>
-          </button>
+          <Link href="/featuresandservices">
+            <button className="btn flex items-center cursor-pointer md:px-2 lg:px-6 sm:h-14 md:hover:bg-gray-100 rounded-xl active:border-b-2 active:border-blue-500 group">
+              <h3 className="h-5 text-center text-gray-600 sm:h-7 mx-auto group-hover:text-blue-500">
+                Features & Services
+              </h3>
+            </button>
+          </Link>
+          <Link href="/ourteam">
+            <button className="btn flex items-center cursor-pointer md:px-2 lg:px-6 sm:h-14 md:hover:bg-gray-100 rounded-xl active:border-b-2 active:border-blue-500 group">
+              <h3 className="h-5 text-center text-gray-600 sm:h-7 mx-auto group-hover:text-blue-500">
+                Our Team
+              </h3>
+            </button>
+          </Link>
+          <Link href="/blog">
+            <button className="btn flex items-center cursor-pointer md:px-2 lg:px-6 sm:h-14 md:hover:bg-gray-100 rounded-xl active:border-b-2 active:border-blue-500 group">
+              <h3 className="h-5 text-center text-gray-600 sm:h-7 mx-auto group-hover:text-blue-500">
+                Blog
+              </h3>
+            </button>
+          </Link>
           <button className="btn flex items-center cursor-pointer md:px-2 lg:px-6 sm:h-14 md:hover:bg-gray-100 rounded-xl active:border-b-2 active:border-blue-500 group">
             <h3 className="h-5 text-center text-gray-600 sm:h-7 mx-auto group-hover:text-blue-500">
               Contact Us
             </h3>
           </button>
         </div>
-        <div className="btn align-middle text-black bg-white border-2 border-black flex items-center cursor-pointer lg:px-6 sm:h-14 rounded-xl active:border-b-2 hover:bg-black hover:text-white duration-200">
-          <h3 className="h-1 text-center sm:h-7 mx-auto">Sign In / Sign Up</h3>
-        </div>
+        <Link href="/signinsignup">
+          <div className="btn align-middle text-black bg-white border-2 border-black flex items-center cursor-pointer lg:px-6 sm:h-14 rounded-xl active:border-b-2 hover:bg-black hover:text-white duration-200">
+            <h3 className="h-1 text-center sm:h-7 mx-auto">
+              Sign In / Sign Up
+            </h3>
+          </div>
+        </Link>
       </div>
     </header>
   );
